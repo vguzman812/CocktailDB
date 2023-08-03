@@ -49,6 +49,8 @@ Keep in mind that using this method is intended for development and testing purp
 5. Click on an image of one of other cocktails to view their details.
 6. To start a new search, navigate back to the main panel and resubmit the form.
 
+![A gif of how to use the site](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMDM5aXYxcDIyeTg3MDZqanI1Ym0ydmswMGFjbWFsM2xrOXhyMnplYSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/sjPFlnayXjGQKE1B5I/giphy.gif)
+
 ## Contributing
 
 Contributions are welcome! If you have any ideas, suggestions, or bug reports, please create an issue or submit a pull request.
