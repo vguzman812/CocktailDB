@@ -1,16 +1,16 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Untitled</title>
+		<title>Cocktail Searcher</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/main.min.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
         <!-- favicon -->
         <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
-        <link rel="manifest" href="/assets/images/site.webmanifest">
+        <link rel="manifest" href="/site.webmanifest">
 	</head>
 	<body class="is-preload">
 
@@ -19,104 +19,69 @@
 
 				<!-- Nav -->
 					<nav id="nav">
-						<a href="#" class="icon solid fa-home"><span>Home</span></a>
-						<a href="#work" class="icon solid fa-glass"><span>Ingredients</span></a>
-						<a href="#contact" class="icon solid fa-envelope"><span></span></a>
+						<a href="#" class="icon solid fa-cocktail"><span>Home</span></a>
+						<a href="#ingredients" class="icon solid fa-lemon"><span>Ingredients</span></a>
+						<a href="#results" class="icon solid fa-list-ol"><span>Results</span></a>
 					</nav>
 
 				<!-- Main -->
 					<div id="main">
 
-						<!-- Me -->
+						<!-- Main -->
 							<article id="home" class="panel intro">
 								<header>
-									<h1>Jane Doe</h1>
-									<p>Dictum Auctor Pellentesque</p>
+									<h1>Cocktail Searcher</h1>
+                                    <form action="#" method="post">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <label for="type-select">What would you like to do?</label>
+                                                <select name="types" id="type-select" class="minimal">
+                                                    <option value="cocktailName">Search by cocktail name</option>
+                                                    <option value="random">Get random cocktail</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-12">
+                                                <input type="text" value="" id="searchInput" placeholder="Search for..." />
+                                            </div>
+                                            <div class="col-12">
+                                                <input type="submit" value="Search" />
+                                            </div>
+                                        </div>
+                                    </form>
 								</header>
-								<a href="#work" class="jumplink pic">
-									<span class="arrow icon solid fa-chevron-right"><span>See my work</span></span>
+								<a href="#ingredients" class="jumplink pic">
+									<span class="arrow icon solid fa-chevron-right"><span>View ingredients</span></span>
 									<img src="/assets/images/me.jpg" alt="" />
 								</a>
 							</article>
 
-						<!-- Work -->
-							<article id="work" class="panel">
+						<!-- Ingredients -->
+							<article id="ingredients" class="panel">
 								<header>
-									<h2>Hello</h2>
+									<h2>Ingredients & Directions</h2>
+                                    <h3>Drink Name</h3>
+                                    <p><a href="#">Search for a cocktail to see the recipe!</a></p>
+								</header>
+								<section>
+                                    <div>
+                                        <ul>
+                                        </ul>
+                                    </div>
+                                </section>
+							</article>
+
+						<!-- Search Results -->
+							<article id="results" class="panel">
+								<header>
+									<h2>Search Results</h2>
 								</header>
 								<p>
-									Phasellus enim sapien, blandit ullamcorper elementum eu, condimentum eu elit.
-									Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-									luctus elit eget interdum.
+									<a href="#">You need to search for something to have search results.</a>
 								</p>
 								<section>
 									<div class="row">
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="/assets/images/pic01.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="/assets/images/pic02.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="/assets/images/pic03.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="/assets/images/pic04.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="/assets/images/pic05.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="/assets/images/pic06.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="/assets/images/pic07.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="/assets/images/pic08.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="/assets/images/pic09.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="/assets/images/pic10.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="/assets/images/pic11.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="/assets/images/pic12.jpg" alt=""></a>
-										</div>
 									</div>
 								</section>
-							</article>
-
-						<!-- Contact -->
-							<article id="contact" class="panel">
-								<header>
-									<h2>Contact Me</h2>
-								</header>
-								<form action="#" method="post">
-									<div>
-										<div class="row">
-											<div class="col-6 col-12-medium">
-												<input type="text" name="name" placeholder="Name" />
-											</div>
-											<div class="col-6 col-12-medium">
-												<input type="text" name="email" placeholder="Email" />
-											</div>
-											<div class="col-12">
-												<input type="text" name="subject" placeholder="Subject" />
-											</div>
-											<div class="col-12">
-												<textarea name="message" placeholder="Message" rows="6"></textarea>
-											</div>
-											<div class="col-12">
-												<input type="submit" value="Send Message" />
-											</div>
-										</div>
-									</div>
-								</form>
 							</article>
 
 					</div>
@@ -124,19 +89,19 @@
 				<!-- Footer -->
 					<div id="footer">
 						<ul class="copyright">
-							<li>&copy; Untitled.</li>
+							<li>Developed by <a href="https://yournextswe.com">Vincent Guzman</a></li>
 						</ul>
 					</div>
 
 			</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			<script src="assets/js/cocktails.js"></script>
+			<script src="/assets/js/jquery.min.js"></script>
+			<script src="/assets/js/browser.min.js"></script>
+			<script src="/assets/js/breakpoints.min.js"></script>
+			<script src="/assets/js/util.js"></script>
+			<script src="/assets/js/main.min.js"></script>
+			<script src="/assets/js/cocktails.min.js"></script>
 
 	</body>
 </html>
